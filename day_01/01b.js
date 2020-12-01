@@ -14,9 +14,12 @@ for (var index = 0; index < length; index++) {
     console.log('procesando ', first)
     for (var subindex = 0; subindex < length; subindex++) {
         const second = parseInt(arr[subindex]);
-        if (first + second === 2020) {
-            console.log('result = ', (first * second), first, second);
-            return;
+        for (var subsub = 0; subsub < length; subsub++) {
+            const third = parseInt(arr[subsub]);
+            if (first + second + third === 2020) {
+                console.log('result = ', (first * second * third), first, second, third);
+                return;
+            }
         }
     }
 }
