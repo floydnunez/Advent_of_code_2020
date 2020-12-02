@@ -1,4 +1,4 @@
-console.log('hello advent! 01 a');
+console.log('hello advent! 01 b');
 
 const fs = require('fs');
 

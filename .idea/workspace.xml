@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="Day 2." />
+    <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="Day 2.">
+      <change afterPath="$PROJECT_DIR$/day_01/01a_internet_version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Advent_of_code_2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Advent_of_code_2020.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_01/01b.js" beforeDir="false" afterPath="$PROJECT_DIR$/day_01/01b.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1l2JER5KF0iqHT53QsaSOfhJf64" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,23 +45,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_02" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_01" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day_01" />
       <recent name="$PROJECT_DIR$/day_02" />
       <recent name="$PROJECT_DIR$/day_01" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.02b.js">
+  <component name="RunManager" selected="Node.js.01b_internet_version.js">
+    <configuration name="01a_internet_version.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01a_internet_version.js" working-dir="$PROJECT_DIR$/day_01">
+      <method v="2" />
+    </configuration>
     <configuration name="01a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01a.js" working-dir="$PROJECT_DIR$/day_01">
       <method v="2" />
     </configuration>
-    <configuration name="01b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01b.js" working-dir="$PROJECT_DIR$/day_01">
+    <configuration name="01b_internet_version.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01b_internet_version.js" working-dir="$PROJECT_DIR$/day_01">
       <method v="2" />
     </configuration>
-    <configuration name="02a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02a.js" working-dir="$PROJECT_DIR$/day_02">
+    <configuration name="01b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01b.js" working-dir="$PROJECT_DIR$/day_01">
       <method v="2" />
     </configuration>
     <configuration name="02b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02b.js" working-dir="$PROJECT_DIR$/day_02">
@@ -45,10 +75,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.01b_internet_version.js" />
+        <item itemvalue="Node.js.01a_internet_version.js" />
         <item itemvalue="Node.js.02b.js" />
         <item itemvalue="Node.js.01b.js" />
         <item itemvalue="Node.js.01a.js" />
-        <item itemvalue="Node.js.02a.js" />
       </list>
     </recent_temporary>
   </component>
@@ -61,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606789140968</updated>
       <workItem from="1606789142265" duration="4477000" />
+      <workItem from="1606914215988" duration="1635000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1606789273505</created>
@@ -106,6 +138,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial push" />
@@ -113,5 +146,27 @@
     <MESSAGE value="first day, simple and ugly" />
     <MESSAGE value="Day 2." />
     <option name="LAST_COMMIT_MESSAGE" value="Day 2." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom" timestamp="1606915865271">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865271" />
+    <state width="1659" height="272" key="GridCell.Tab.0.center" timestamp="1606915865270">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865270" />
+    <state width="1659" height="272" key="GridCell.Tab.0.left" timestamp="1606915865270">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865270" />
+    <state width="1659" height="272" key="GridCell.Tab.0.right" timestamp="1606915865271">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865271" />
+    <state x="541" y="262" width="598" height="548" key="find.popup" timestamp="1606914303143">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="541" y="262" width="598" height="548" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1606914303143" />
   </component>
 </project>
