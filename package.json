@@ -1,0 +1,7 @@
+{
+  "name": "Advent_of_Code-2020",
+  "version": "1.0.0",
+  "dependencies": {
+    "scanf": "^1.1.2"
+  }
+}

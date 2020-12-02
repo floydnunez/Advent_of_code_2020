@@ -19,16 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="Day 2.">
-      <change afterPath="$PROJECT_DIR$/day_01/01a_internet_version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Advent_of_code_2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Advent_of_code_2020.iml" afterDir="false" />
+    <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="Adding scanf to the solutions">
+      <change afterPath="$PROJECT_DIR$/day_02/02a_scanf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_02/02b_scanf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_01/01b.js" beforeDir="false" afterPath="$PROJECT_DIR$/day_01/01b.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,39 +56,41 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_02" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day_02" />
       <recent name="$PROJECT_DIR$/day_01" />
       <recent name="$PROJECT_DIR$/day_02" />
       <recent name="$PROJECT_DIR$/day_01" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.01b_internet_version.js">
-    <configuration name="01a_internet_version.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01a_internet_version.js" working-dir="$PROJECT_DIR$/day_01">
-      <method v="2" />
-    </configuration>
-    <configuration name="01a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01a.js" working-dir="$PROJECT_DIR$/day_01">
-      <method v="2" />
-    </configuration>
-    <configuration name="01b_internet_version.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01b_internet_version.js" working-dir="$PROJECT_DIR$/day_01">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.02b_scanf.js">
     <configuration name="01b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01b.js" working-dir="$PROJECT_DIR$/day_01">
+      <method v="2" />
+    </configuration>
+    <configuration name="02a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02a.js" working-dir="$PROJECT_DIR$/day_02">
+      <method v="2" />
+    </configuration>
+    <configuration name="02a_scanf.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02a_scanf.js" working-dir="$PROJECT_DIR$/day_02">
       <method v="2" />
     </configuration>
     <configuration name="02b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02b.js" working-dir="$PROJECT_DIR$/day_02">
       <method v="2" />
     </configuration>
+    <configuration name="02b_scanf.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02b_scanf.js" working-dir="$PROJECT_DIR$/day_02">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.01b_internet_version.js" />
-        <item itemvalue="Node.js.01a_internet_version.js" />
+        <item itemvalue="Node.js.02b_scanf.js" />
+        <item itemvalue="Node.js.02a_scanf.js" />
         <item itemvalue="Node.js.02b.js" />
+        <item itemvalue="Node.js.02a.js" />
         <item itemvalue="Node.js.01b.js" />
-        <item itemvalue="Node.js.01a.js" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606789140968</updated>
       <workItem from="1606789142265" duration="4477000" />
-      <workItem from="1606914215988" duration="1635000" />
+      <workItem from="1606914215988" duration="4294000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1606789273505</created>
@@ -122,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606888415285</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Day 2. Added day 1's internet version">
+      <created>1606915973639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606915973639</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,28 +163,30 @@
     <MESSAGE value="ah what the hell" />
     <MESSAGE value="first day, simple and ugly" />
     <MESSAGE value="Day 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 2." />
+    <MESSAGE value="Day 2. Added day 1's internet version" />
+    <MESSAGE value="Adding scanf to the solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding scanf to the solutions" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="272" key="GridCell.Tab.0.bottom" timestamp="1606915865271">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom" timestamp="1606919134221">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865271" />
-    <state width="1659" height="272" key="GridCell.Tab.0.center" timestamp="1606915865270">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606919134221" />
+    <state width="1659" height="272" key="GridCell.Tab.0.center" timestamp="1606919134221">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865270" />
-    <state width="1659" height="272" key="GridCell.Tab.0.left" timestamp="1606915865270">
+    <state width="1659" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606919134221" />
+    <state width="1659" height="272" key="GridCell.Tab.0.left" timestamp="1606919134220">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865270" />
-    <state width="1659" height="272" key="GridCell.Tab.0.right" timestamp="1606915865271">
+    <state width="1659" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606919134220" />
+    <state width="1659" height="272" key="GridCell.Tab.0.right" timestamp="1606919134221">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606915865271" />
-    <state x="541" y="262" width="598" height="548" key="find.popup" timestamp="1606914303143">
+    <state width="1659" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606919134221" />
+    <state x="541" y="262" width="598" height="548" key="find.popup" timestamp="1606918712966">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="541" y="262" width="598" height="548" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1606914303143" />
+    <state x="541" y="262" width="598" height="548" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1606918712966" />
   </component>
 </project>
