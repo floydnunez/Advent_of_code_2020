@@ -24,3 +24,4 @@ for (var index = 0; index < length; index++) {
     }
 }
 
+//solution: 289270976 which is 688 * 514 * 818

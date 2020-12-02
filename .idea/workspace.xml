@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="first day, simple and ugly">
-      <change afterPath="$PROJECT_DIR$/day_01/01a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day_01/01b.js" afterDir="false" />
+    <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="Day 2.">
+      <change afterPath="$PROJECT_DIR$/day_02/02a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_02/02a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_02/02b.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_01/01a.js" beforeDir="false" afterPath="$PROJECT_DIR$/day_01/01a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_01/01b.js" beforeDir="false" afterPath="$PROJECT_DIR$/day_01/01b.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,25 +28,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_02" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day_02" />
       <recent name="$PROJECT_DIR$/day_01" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.01b.js">
+  <component name="RunManager" selected="Node.js.02b.js">
     <configuration name="01a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01a.js" working-dir="$PROJECT_DIR$/day_01">
       <method v="2" />
     </configuration>
     <configuration name="01b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_01/01b.js" working-dir="$PROJECT_DIR$/day_01">
       <method v="2" />
     </configuration>
+    <configuration name="02a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02a.js" working-dir="$PROJECT_DIR$/day_02">
+      <method v="2" />
+    </configuration>
+    <configuration name="02b.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day_02/02b.js" working-dir="$PROJECT_DIR$/day_02">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.02b.js" />
         <item itemvalue="Node.js.01b.js" />
         <item itemvalue="Node.js.01a.js" />
+        <item itemvalue="Node.js.02a.js" />
       </list>
     </recent_temporary>
   </component>
@@ -56,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606789140968</updated>
-      <workItem from="1606789142265" duration="2161000" />
+      <workItem from="1606789142265" duration="4434000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1606789273505</created>
@@ -72,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606789361948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first day, simple and ugly">
+      <created>1606822978550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606822978550</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +111,7 @@
     <MESSAGE value="initial push" />
     <MESSAGE value="ah what the hell" />
     <MESSAGE value="first day, simple and ugly" />
-    <option name="LAST_COMMIT_MESSAGE" value="first day, simple and ugly" />
+    <MESSAGE value="Day 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 2." />
   </component>
 </project>

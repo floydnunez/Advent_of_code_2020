@@ -21,3 +21,4 @@ for (var index = 0; index < length; index++) {
     }
 }
 
+//solution:  692916, which is 438 * 1582
