@@ -1,4 +1,4 @@
-console.log('hello advent! 01 a');
+console.log('hello advent! 02 a');
 
 const fs = require('fs');
 const sscanf = require('scanf').sscanf;

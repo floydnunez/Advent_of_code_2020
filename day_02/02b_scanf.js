@@ -1,8 +1,7 @@
-console.log('hello advent! 01 a');
+console.log('hello advent! 02 b');
 
 const fs = require('fs');
 const sscanf = require('scanf').sscanf;
-
 
 const pass_rules = fs.readFileSync('02a.txt', 'utf8').split('\n');
 const length = pass_rules.length;
@@ -21,7 +20,6 @@ function validate(rule) {
 }
 
 const valids = rules.filter(rule=> validate(rule));
-console.log('valids: ', valids)
 console.log('valid passwords: ', valids.length, 'out of', length);
 console.log('fin 02a');
 //solution: 335
