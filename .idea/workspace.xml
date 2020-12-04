@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92993086-0fd4-4d89-b7eb-797793244a1c" name="Default Changelist" comment="Adding scanf to the solutions">
-      <change afterPath="$PROJECT_DIR$/day_02/02full_scanf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_02/02b_scanf.js" beforeDir="false" afterPath="$PROJECT_DIR$/day_02/02b_scanf.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606789140968</updated>
       <workItem from="1606789142265" duration="4477000" />
-      <workItem from="1606914215988" duration="4902000" />
+      <workItem from="1606914215988" duration="6058000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1606789273505</created>
@@ -151,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606919341440</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding scanf to the solutions">
+      <created>1606920028418</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606920028418</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,22 +184,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding scanf to the solutions" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="272" key="GridCell.Tab.0.bottom" timestamp="1606920016189">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom" timestamp="1606921425489">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606920016189" />
-    <state width="1659" height="272" key="GridCell.Tab.0.center" timestamp="1606920016188">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606921425489" />
+    <state width="1659" height="272" key="GridCell.Tab.0.center" timestamp="1606921425488">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606920016188" />
-    <state width="1659" height="272" key="GridCell.Tab.0.left" timestamp="1606920016188">
+    <state width="1659" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606921425488" />
+    <state width="1659" height="272" key="GridCell.Tab.0.left" timestamp="1606921425488">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606920016188" />
-    <state width="1659" height="272" key="GridCell.Tab.0.right" timestamp="1606920016188">
+    <state width="1659" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606921425488" />
+    <state width="1659" height="272" key="GridCell.Tab.0.right" timestamp="1606921425489">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1659" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606920016188" />
+    <state width="1659" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606921425489" />
     <state x="541" y="262" width="598" height="548" key="find.popup" timestamp="1606918712966">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
