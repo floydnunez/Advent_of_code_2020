@@ -48,4 +48,5 @@ for (let index = 0; index < passtotal; index++) {
         valids++;
     }
 }
-console.log('total valid passports: ',valids)
+console.log('total valid passports: ',valids);
+//answer 170

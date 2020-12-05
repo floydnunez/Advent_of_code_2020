@@ -150,3 +150,4 @@ console.log('total valid passports : ',valids);
 console.log('double valid passports: ',double_valids);
 //89 WRONG
 //104 WRONG too high
+//answer: 103
