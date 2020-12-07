@@ -6,7 +6,7 @@ function isBlank(str) {
     return (!str || /^\s*$/.test(str));
 }
 
-const all_data = fs.readFileSync('04a.txt', 'utf8');
+const all_data = fs.readFileSync('04reddit.txt', 'utf8');
 const all_passports = all_data.split('\n');
 const length = all_passports.length;
 
