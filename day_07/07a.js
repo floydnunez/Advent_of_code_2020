@@ -57,4 +57,5 @@ function recursive_find(rules, objective) {
 
 const find_all = recursive_find(rules, 'shiny gold bag');
 
-console.log(find_all);
+console.log(find_all.size);
+//answer: 208

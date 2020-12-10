@@ -52,3 +52,5 @@ function permutate(jolts, first) {
 const answers = permutate(joltages, max_joltage);
 // console.log('all:', answers);
 console.log('answers:',answers.length)
+
+//THIS IS STUPID AND WON'T EVER FINISH
