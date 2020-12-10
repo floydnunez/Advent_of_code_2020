@@ -1,7 +1,7 @@
 console.log('hello advent! 10 b');
 
 const fs = require('fs');
-
+//comment
 const preamble = 5;
 const joltages = fs.readFileSync('10.e2.txt', 'utf8').split('\n').map(n => parseInt(n));
 joltages.push(0);
