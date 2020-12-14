@@ -1,3 +1,4 @@
+"use strict";
 console.log('hello advent! 14 a');
 
 const fs = require('fs');
@@ -5,7 +6,6 @@ const sscanf = require('scanf').sscanf;
 
 
 const rawinst = fs.readFileSync('14.txt', 'utf8').split('\n');
-const length = rawinst.length;
 
 const rules = [];
 
@@ -21,12 +21,12 @@ function dec2bin(dec){
     return (dec >>> 0).toString(2);
 }
 
-function reverseString(str) {
+function rs(str) {
     return str.split('').reverse().join('');
 }
 
 function rev_app_mask(mask, value) {
-    return reverseString(apply_mask(reverseString(mask), reverseString(value)));
+    return rs(apply_mask(rs(mask), rs(value)));
 }
 
 function apply_mask(mask, value) {
@@ -45,15 +45,15 @@ console.log(rules);
 
 const memory = [];
 
-let rmask = '';
+let rmask;
 for (const rr of rules) {
     if (rr.mask) {
-        mask = reverseString(rr.mask);
+        rmask = rs(rr.mask);
     } else {
-        const val = reverseString(dec2bin(rr.val));
-        console.log('current mask', mask);
+        const val = rs(dec2bin(rr.val));
+        console.log('current mask', rmask);
         console.log('rule:', val);
-        memory[rr.addr] = parseInt(reverseString(apply_mask(mask, val)), 2);
+        memory[rr.addr] = parseInt(rs(apply_mask(rmask, val)), 2);
     }
 }
 
@@ -64,3 +64,4 @@ for (const elem of memory) {
     }
 }
 console.log(total);
+//answer: 5875750429995

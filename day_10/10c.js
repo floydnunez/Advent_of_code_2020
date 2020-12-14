@@ -3,7 +3,7 @@ console.log('hello advent! 10 b');
 const fs = require('fs');
 //comment
 const preamble = 5;
-const joltages = fs.readFileSync('10a.txt', 'utf8').split('\n').map(n => parseInt(n));
+const joltages = fs.readFileSync('10.e4.txt', 'utf8').split('\n').map(n => parseInt(n));
 // joltages.push(0);
 joltages.sort((n,m)=> n - m );
 const max_joltage = joltages[joltages.length - 1] + 3;
@@ -99,6 +99,7 @@ for (const elem of consolidated) {
     }
 }
 console.log(sequence);
+//for 10.e1.txt
 //1,2,3
 //1,2
 //1,3
