@@ -1,5 +1,5 @@
 "use strict";
-console.time('15b');
+console.time('15b-2');
 console.log('hello advent! 15 b');
 
 const input = [0,6,1,7,2,19,20];
@@ -17,16 +17,17 @@ const sequence = [...initial];
 
 let mentioned = new Map();
 for (let ii = 0; ii < initial.length; ii++) {
-    mentioned.set(initial[ii], [ii, ii]);
+    mentioned.set(initial[ii], { last: ii, next_last: ii });
 }
 console.log('mentioned:', mentioned);
 
 function add_to_mentioned(ment, diff, pos) {
     if (ment.has(diff)) {
         const positions = ment.get(diff);
-        positions.push(pos); //it's not necessary to re-set it as it is passed as reference
+        positions.next_to_last = positions.last;
+        positions.last = pos;
     } else {
-        ment.set(diff, [pos, pos]);
+        ment.set(diff, { last: pos, next_to_last: pos });
     }
 }
 
@@ -35,10 +36,7 @@ function get_repeats_last(sequence) {
     const last = sequence[length - 1];
 
     const positions = mentioned.get(last);
-    const last_pos = positions[positions.length - 1];
-    const next_to_last_pos = positions[positions.length - 2];
-
-    const diff = last_pos - next_to_last_pos;
+    const diff = positions.last - positions.next_to_last;
     add_to_mentioned(mentioned, diff, length);
     return diff;
 }
@@ -53,5 +51,5 @@ for (let count = 0; count < max; count++) {
 
 console.log(sequence);
 console.log('answer:', sequence[max-1]);
-console.timeEnd('15b');
+console.timeEnd('15b-2');
 //answer: 19331
