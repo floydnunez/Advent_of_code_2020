@@ -6,7 +6,7 @@ const input_example = [0,3,6];
 const input_example2 = [1,3,2];
 const input_example3 = [2,1,3];
 
-const initial = input_example;
+const initial = input;
 
 const sequence = [...initial];
 
@@ -26,10 +26,11 @@ function get_repeats_last(sequence) {
     // console.log('never repeated');
     return 0;
 }
-
-for (let count = 0; count < 10000; count++) {
+const max = 2020;
+for (let count = 0; count < max; count++) {
     sequence.push(get_repeats_last(sequence));
 }
 
 console.log(sequence);
-console.log('answer:', sequence[2020 - 1]);
+console.log('answer:', sequence[max - 1]);
+//answer: 706
