@@ -81,8 +81,6 @@ all_invalid.map( n => total += n );
 console.log(all_tickets.length);
 console.log(good_tickets.length);
 
-const rule_order = [];
-
 const bad_index_sets = [];
 for (const rule of rules) {
     const incorrect_indexes = new Set();
@@ -94,11 +92,27 @@ for (const rule of rules) {
             }
         }
     }
-    console.log(incorrect_indexes);
-    bad_index_sets.push(incorrect_indexes);
+    bad_index_sets.push( { rule: rule, wrongs: incorrect_indexes } );
 }
 
-bad_index_sets.sort( (n,m) => n.size - m.size);
-
-
+bad_index_sets.sort( (n,m) => m.wrongs.size - n.wrongs.size );
 console.log(bad_index_sets);
+
+const rule_order = [];
+
+for (let ii = 0; ii < bad_index_sets.length; ii++) {
+    const bad = bad_index_sets[ii];
+    for (let jj = 0; jj < bad_index_sets.length; jj++) {
+        if ( !bad.wrongs.has(jj) && rule_order.indexOf(jj) < 0 ) {
+            rule_order.push(jj);
+        }
+    }
+}
+
+console.log('rule order:', rule_order);
+
+for (const order of rule_order) {
+    const rule = rules[order];
+    const elem = my_ticket[order];
+    console.log('my ticket:', elem, rule);
+}
