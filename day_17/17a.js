@@ -3,12 +3,12 @@ console.log('hello advent! 17 a');
 
 const fs = require('fs');
 
-const test = true;
+const test = false;
 const data = fs.readFileSync( test? '17.e.txt': '17.txt', 'utf8').split('\n');
 const length = data.length;
 
 
-const size = test? 5: 100;
+const size = test? 12: 100;
 
 function create_space(side) {
     const space = new Array(side);
@@ -28,7 +28,6 @@ const space = create_space(size);
 
 function set_data_in_middle(init, size_param, cube) {
     const initial_x = Math.floor(size_param/2);
-    console.log(initial_x);
     const initial_y_z = Math.floor(size_param/2) - Math.floor(init.length/2 );
     for (let yy = 0; yy < init.length; yy++) {
         for (let zz = 0; zz < init.length; zz++) {
@@ -42,8 +41,10 @@ function print_layer(cube, number) {
     for (let yy = 0; yy < cube.length; yy++) {
         const line = cube[number][yy].join('');
         let neighbourhood = '';
-        for (let zz = 0; zz < cube.length; zz++) {
-            neighbourhood += count_neighbours(cube, number, yy, zz);
+        if (test) {
+            for (let zz = 0; zz < cube.length; zz++) {
+                neighbourhood += count_neighbours(cube, number, yy, zz);
+            }
         }
         console.log(line + ' ' + neighbourhood);
     }
@@ -73,10 +74,11 @@ function count_neighbours(cube, xx_pos, yy_pos, zz_pos) {
             }
         }
     }
-    return neighbours;
+    return neighbours > 9 ? 9: neighbours;
 }
 
 function apply_rules(cube) {
+    let total = 0;
     const next = create_space(cube.length);
     for (let xx = 0; xx < cube.length; xx++) {
         for (let yy = 0; yy < cube[xx].length; yy++) {
@@ -84,20 +86,30 @@ function apply_rules(cube) {
                 const neighbours = count_neighbours(cube, xx, yy, zz);
                 const tile = cube[xx][yy][zz];
                 if (tile === '#' && (neighbours === 2 || neighbours === 3)){
-                    next[xx][yy][zz] = '#'
+                    next[xx][yy][zz] = '#';
+                    total++;
                 } else if (tile === '#') {
-                    next[xx][yy][zz] = '.'
+                    next[xx][yy][zz] = '.';
                 }
                 if (tile === '.' && neighbours === 3) {
-                    next[xx][yy][zz] = '#'
+                    next[xx][yy][zz] = '#';
+                    total++;
+
                 } else if (tile === '.') {
-                    next[xx][yy][zz] = '.'
+                    next[xx][yy][zz] = '.';
                 }
             }
         }
     }
-    return next;
+    return { cube:next, total: total };
 }
 
-const next_space = apply_rules(space);
-print_layer(next_space, size/2);
+let curr_space = space;
+const steps = 6;
+for (let i = 0; i < steps; i++) {
+    const next_space_total = apply_rules(curr_space);
+    curr_space = next_space_total.cube;
+    print_layer(curr_space, size/2);
+    console.log('total:', next_space_total.total);
+}
+//answer: 211
