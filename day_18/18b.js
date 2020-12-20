@@ -4,11 +4,10 @@ console.log('hello advent! 18 b');
 const fs = require('fs');
 
 const test = false;
-const data = fs.readFileSync( test? '18.e2.txt': '18.txt', 'utf8').split('\n');
+const data = fs.readFileSync( test? '18.e4.txt': '18.txt', 'utf8').split('\n');
 const length = data.length;
 
-let total = 0;
-
+//instead of fixing part 1's function, let's just add parenthesis where necessary (around +s)
 function apply_oper(pre, prev_number, curr_oper, number) {
     test && console.log(pre, 'apply:', prev_number, curr_oper, number);
     if (curr_oper === '+') {
@@ -94,7 +93,9 @@ function modify_before(result, pos) {
                 break;
             case '(':
                 paren_count--;
+                test && console.log('( paren_count:', paren_count, paren_count === 0);
                 if (paren_count === 0) {
+                    test && console.log('putting open paren before open paren');
                     result.splice(ii, 0, '(');
                     return;
                 }
@@ -132,42 +133,61 @@ function modify_after(result, pos) {
                 paren_count++;
                 break;
             case ')':
+                paren_count--;
                 if (paren_count === 0) {
                     result.splice(ii+1, 0, ')');
                     return;
                 }
-                paren_count--;
                 break;
         }
     }
     result.splice(result.length, 0, ')');
     test && console.log('ma:', result, pos);}
 
-function apply_parens(line) {
-    let result = line.split('');
-    let index_plus = [];
-    for (let ii = 0; ii < line.length; ii++) {
-        if (line[ii] === '+') {
-            index_plus.push(ii);
+function find_x_plus(result, which_one) {
+    let amount_of_plus = 0;
+    for (let ii = 0; ii < result.length; ii++) {
+        if (result[ii] === '+') {
+            if (amount_of_plus === which_one) {
+                return ii;
+            }
+            amount_of_plus++;
         }
     }
-    test && console.log(index_plus);
-    let accumulated_extra = 0;
-    for (const index of index_plus) {
-        test && console.log('applying parens at', index + accumulated_extra, 'to', result.join(''));
-        modify_before(result, index + accumulated_extra);
-        accumulated_extra++;
-        modify_after(result, index + accumulated_extra);
-        accumulated_extra++;
+}
+
+function apply_parens(line) {
+    let result = line.split('');
+    let amount_of_plus = 0;
+    for (let ii = 0; ii < line.length; ii++) {
+        if (line[ii] === '+') {
+            amount_of_plus++;
+        }
+    }
+    test && console.log('amount_of_plus:', amount_of_plus);
+    for (let ii = 0; ii < amount_of_plus; ii++) {
+        const index = find_x_plus(result, ii)
+        test && console.log('applying parens at', index, 'to', result.join(''));
+        modify_before(result, index);
+        modify_after(result, index + 1); //could be eliminated if we put modify_after first
     }
     return result.join('');
 }
 
+let final_total = 0;
+let totals = [];
 for (const line of data) {
-    test && console.log(line);
     const paren_line = apply_parens(line);
-    console.log(paren_line, '\n');
-    total += parseLine(' ', paren_line)[0];
+    console.log(line);
+    console.log(paren_line);
+    const subtotal = parseLine(' ', paren_line)[0];
+    console.log(subtotal);
+    totals.push(subtotal);
+    final_total += subtotal;
 }
-console.log(total);
+console.log('answer:', final_total);
 //wrong: 32715860779828
+//wrong: 639430447104 (too low?)
+//wrong: 14505305253203244 (too high?)
+//wrong: 223441367210079 (just wrong)
+//answer: 321176691637769

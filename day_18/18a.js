@@ -3,8 +3,8 @@ console.log('hello advent! 18 a');
 
 const fs = require('fs');
 
-const test = false;
-const data = fs.readFileSync( test? '18.e2.txt': '18.txt', 'utf8').split('\n');
+const test = true;
+const data = fs.readFileSync( test? '18.e4.txt': '18.txt', 'utf8').split('\n');
 const length = data.length;
 
 let total = 0;

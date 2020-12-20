@@ -4,7 +4,7 @@ console.log('hello advent! 16 a');
 const fs = require('fs');
 const sscanf = require('scanf').sscanf;
 
-const data = fs.readFileSync('16.e2.txt', 'utf8').split('\n');
+const data = fs.readFileSync('16.txt', 'utf8').split('\n');
 const length = data.length;
 
 const rules = [];
@@ -24,7 +24,6 @@ for (const line of data) {
     if (state === 0) {
         let rule = sscanf(line, '%s %s: %d-%d or %d-%d', 'name1', 'name2', 'min1', 'max1', 'min2', 'max2');
         rule.name = rule.name1 + ' ' + rule.name2;
-        delete rule.name1;
         if (rule.max2 === null) {
             rule = sscanf(line, '%s: %d-%d or %d-%d', 'name', 'min1', 'max1', 'min2', 'max2');
         }
@@ -96,23 +95,48 @@ for (const rule of rules) {
 }
 
 bad_index_sets.sort( (n,m) => m.wrongs.size - n.wrongs.size );
-console.log(bad_index_sets);
+console.log('bad_index_sets:', bad_index_sets);
+
+function arrayRemove(arr, value) {
+    return arr.filter(function(ele){
+        return ele !== value;
+    });
+}
 
 const rule_order = [];
-
-for (let ii = 0; ii < bad_index_sets.length; ii++) {
-    const bad = bad_index_sets[ii];
-    for (let jj = 0; jj < bad_index_sets.length; jj++) {
-        if ( !bad.wrongs.has(jj) && rule_order.indexOf(jj) < 0 ) {
-            rule_order.push(jj);
+let possibilities = []
+for (let ii = 0; ii < rules.length; ii++) {
+    possibilities.push(ii);
+}
+console.log('ordering:', possibilities);
+for (const rule_bads of bad_index_sets) {
+    console.log('processing', rule_bads)
+    for (let ii = 0; ii < possibilities.length; ii++) {
+        const possible = possibilities[ii];
+        console.log('checking', possible, 'in', rule_bads.wrongs);
+        if (!rule_bads.wrongs.has(possible)) {
+            rule_order[possible] = rule_bads.rule;
+            console.log('removing element', ii, 'from', possibilities)
+            possibilities = arrayRemove(possibilities, possible);
+            console.log('removed: new possibilities: ', possibilities)
+            break;
         }
     }
 }
 
-console.log('rule order:', rule_order);
-
-for (const order of rule_order) {
-    const rule = rules[order];
-    const elem = my_ticket[order];
-    console.log('my ticket:', elem, rule);
+console.log(rule_order);
+console.log('-----------\n');
+console.log('my ticket:', my_ticket);
+let mult_total = 1;
+const totals = [];
+for (let ii = 0; ii < rule_order.length; ii++) {
+    const rule = rule_order[ii];
+    if (rule.name1 === 'departure') {
+        console.log('multiplying', rule.name, 'val:', my_ticket[ii], rule);
+        const val = my_ticket[ii];
+        mult_total *= val;
+        totals.push(val);
+    }
 }
+console.log(totals.join(' * '));
+console.log('ANSWER:', mult_total);
